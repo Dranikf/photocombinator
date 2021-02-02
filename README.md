@@ -20,7 +20,7 @@ result
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci.jpeg" height = "600">
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/example1.png" height = "600">
 
-by using ```sh combine_strips```
+by using ```combine_strips```
 you can combine strips in new pictures
 ```sh
 res = combine_strips(strips,2, 0);
