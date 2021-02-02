@@ -1,22 +1,19 @@
 from PIL import Image;
 from get_image_strips import get_image_strips;
 from combine_strips import combine_strips;
+from combine_photo import combine_photo;
 
-#sudo apt-get install imagemagick
+p = Image.open('examples/cuci.jpeg')
 
-p = Image.open('luka.jpeg');
-k = Image.open('unnamed.jpeg');
+strips = get_image_strips(p, 3, dir = 0);
 
-sptis = 30;
-while True:
-    a = input();
+#for strip in strips:
+#    strip.show();
 
-    if a == "q":
-        for i, photo in enumerate(photos):
-            photo.save("test" + str(i) + ".jpeg");
-    else:
-        sptis += int(a);
-        strips = get_image_strips(p, sptis, dir = 1);
-        photos = combine_strips(strips, 3, dir = 1);
-        for i, photo in enumerate(photos):
-            photo.show()
+res = combine_strips(strips,2, 0);
+
+#for r in res:
+#    r.show();
+
+
+combine_photo('examples/elumin.jpeg', 20, 2,0);
