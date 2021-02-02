@@ -2,7 +2,7 @@ from PIL import Image;
 from get_image_strips import get_image_strips;
 from combine_strips import combine_strips;
 
-def two_from_photo(filename, str_count, photo_count, dir = 1):
+def combine_photo(filename, str_count, photo_count, dir = 1):
     '''combines  get_image_strips and combine_strips
     for geven file
     input:
