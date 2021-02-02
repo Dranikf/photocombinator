@@ -16,6 +16,7 @@ for strip in strips:
 ```
 
 result
+
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci.jpeg" height = "600">
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/example1.png" height = "600">
 
@@ -29,6 +30,7 @@ for r in res:
 ```
 
 result
+
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/example2.png" height = "600">
 
 ```combine_photo```
@@ -36,6 +38,7 @@ uses previos functions for combining any file
 ```combine_photo('examples/cuci.jpeg', 40, 3,1);```
 
 result
+
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci_0.jpeg" height = "200">
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci_1.jpeg" height = "200">
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci_2.jpeg" height = "200">
