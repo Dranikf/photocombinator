@@ -3,4 +3,39 @@ functions for cutting a photo into strips and gluing back into multiple photos l
 # library Pillow
 pillow library used https://github.com/python-pillow/Pillow 
 # Examples
-<img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci_0.jpeg" height="450">
+
+by using ```sh get_image_strips```
+you can get list of strips
+```sh
+
+strips = get_image_strips(p, 3, dir = 0);
+
+for strip in strips:
+    strip.show();
+
+```
+
+result
+<img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci.jpeg" height = "600">
+<img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/example1.png" height = "600">
+
+by using ```sh combine_strips```
+you can combine strips in new pictures
+```sh
+res = combine_strips(strips,2, 0);
+
+for r in res:
+    r.show();
+```
+
+result
+<img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/example2.png" height = "600">
+
+```sh combine_photo```
+uses previos functions for combining any file
+```sh combine_photo('examples/cuci.jpeg', 40, 3,1);```
+
+result
+<img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci_0.jpeg" height = "200">
+<img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci_1.jpeg" height = "200">
+<img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci_2.jpeg" height = "200">
