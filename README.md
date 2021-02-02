@@ -4,7 +4,7 @@ functions for cutting a photo into strips and gluing back into multiple photos l
 pillow library used https://github.com/python-pillow/Pillow 
 # Examples
 
-by using ```sh get_image_strips```
+by using ``` get_image_strips```
 you can get list of strips
 ```sh
 
@@ -31,11 +31,13 @@ for r in res:
 result
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/example2.png" height = "600">
 
-```sh combine_photo```
+```combine_photo```
 uses previos functions for combining any file
-```sh combine_photo('examples/cuci.jpeg', 40, 3,1);```
+```combine_photo('examples/cuci.jpeg', 40, 3,1);```
 
 result
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci_0.jpeg" height = "200">
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci_1.jpeg" height = "200">
 <img src = "https://raw.githubusercontent.com/Dranikf/photocombinator/main/examples/cuci_2.jpeg" height = "200">
+
+for more examples look 'examples' folder
